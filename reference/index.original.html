@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Generator repairs and servicing in Germiston. Contact Jameric to discuss a generator fault or arrange servicing.">
+<title>Jameric | Generator Repairs & Service</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#142722;--green:#193e32;--lime:#d9f279;--paper:#f5f5ef;--muted:#617169;--radius-sm:8px;--radius-md:14px;--radius-lg:22px;--shadow-sm:0 4px 14px rgba(20,39,34,0.06);--shadow-md:0 12px 32px rgba(20,39,34,0.08);--shadow-lg:0 24px 60px rgba(20,39,34,0.12);--transition:220ms cubic-bezier(.2,.8,.2,1);--font-body:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;--font-display:'Plus Jakarta Sans','Inter',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+a,button{touch-action:manipulation}
+button{cursor:pointer}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:4px}
+header{position:sticky;top:0;z-index:50;background:rgba(245,245,239,0.78);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);border-bottom:1px solid rgba(20,39,34,0.06);transition:background var(--transition),box-shadow var(--transition)}
+header.scrolled{background:rgba(245,245,239,0.92);box-shadow:var(--shadow-sm)}
+.nav{max-width:1320px;margin:0 auto;padding:18px 5%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-family:var(--font-display);font-size:24px;font-weight:800;letter-spacing:-0.02em;display:flex;align-items:center;gap:10px}
+.brand b{background:var(--green);color:var(--lime);padding:6px 11px;font-size:21px;border-radius:8px;box-shadow:var(--shadow-sm);transition:transform var(--transition)}
+.brand:hover b{transform:rotate(-4deg) scale(1.05)}
+.brand small{display:block;font-size:9px;letter-spacing:0.18em;text-transform:uppercase;margin-top:4px;color:var(--muted);font-weight:600}
+.links{display:flex;gap:28px;font-size:14px;font-weight:500}
+.links a{position:relative;padding:4px 0;transition:color var(--transition)}
+.links a::after{content:'';position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--green);border-radius:2px;transition:width var(--transition)}
+.links a:hover{color:var(--green)}
+.links a:hover::after{width:100%}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;background:var(--lime);color:var(--ink);padding:15px 22px;border:0;font-weight:700;font-size:13px;border-radius:999px;box-shadow:var(--shadow-sm);transition:transform var(--transition),box-shadow var(--transition),background var(--transition),color var(--transition);letter-spacing:0.01em}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.btn:active{transform:translateY(0)}
+.btn.dark{background:var(--green);color:#fff}
+.btn.dark:hover{background:#123026}
+.btn.outline{border:1px solid rgba(20,39,34,0.25);background:rgba(255,255,255,0.08);color:inherit;backdrop-filter:blur(6px)}
+.btn.outline:hover{background:rgba(255,255,255,0.16);border-color:rgba(255,255,255,0.45)}
+.wrap{max-width:1320px;margin:0 auto;padding:0 5%}
+.hero{background:var(--green);color:#fff;overflow:hidden;position:relative}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(60% 50% at 80% 20%,rgba(217,242,121,0.12),transparent 60%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;min-height:640px;align-items:center;gap:48px;padding:60px 0;position:relative}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.eyebrow .dot{background:var(--lime)}
+.dot{width:8px;height:8px;display:inline-block;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(217,242,121,0.2)}
+h1{font-family:var(--font-display);font-size:clamp(44px,5.4vw,76px);line-height:1.02;letter-spacing:-0.035em;margin:24px 0 0;font-weight:800}
+h1 em{font-style:normal;color:var(--lime)}
+.lead{font-size:17px;line-height:1.7;color:#c3d2c8;max-width:440px;margin-top:20px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:32px 0 0}
+.hero-foot{display:flex;gap:24px;font-size:12px;color:#b9cbbf;margin-top:44px;flex-wrap:wrap}
+.hero-foot span{display:inline-flex;align-items:center;gap:6px}
+.visual{position:relative;padding:20px 0}
+.visual::before{content:'';position:absolute;inset:8% 4%;border:1px solid rgba(255,255,255,0.1);border-radius:50%;transform:scale(.92)}
+.visual svg{position:relative;width:100%;filter:drop-shadow(0 30px 28px rgba(9,30,27,0.45));transition:transform 600ms cubic-bezier(.2,.8,.2,1)}
+.visual:hover svg{transform:translateY(-6px) scale(1.01)}
+.visual-label{display:flex;justify-content:space-between;font-size:10px;letter-spacing:0.2em;color:#c3d2c8;position:relative;margin-bottom:10px}
+.status{border-top:1px solid rgba(255,255,255,0.18);padding-top:18px;margin-top:20px}
+.strip{background:var(--lime);padding:22px 5%;display:flex;justify-content:center;gap:8vw;font-size:12px;font-weight:700;letter-spacing:0.16em;color:var(--ink);flex-wrap:wrap}
+.section{padding:120px 0}
+.intro{display:flex;justify-content:space-between;gap:48px;align-items:end;margin-bottom:56px;flex-wrap:wrap}
+h2{font-family:var(--font-display);font-size:clamp(30px,3.6vw,46px);line-height:1.1;letter-spacing:-0.025em;margin:16px 0 0;font-weight:800}
+.intro p{max-width:360px;font-size:15px;line-height:1.7;color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service{position:relative;padding:36px 30px 34px;background:#fff;border:1px solid rgba(20,39,34,0.06);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition);overflow:hidden}
+.service::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(217,242,121,0.0),rgba(217,242,121,0.06));opacity:0;transition:opacity var(--transition);pointer-events:none}
+.service:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:rgba(217,242,121,0.6)}
+.service:hover::before{opacity:1}
+.service .num{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;font-weight:600;letter-spacing:0.08em}
+.service .num span{font-size:26px;color:var(--green);transition:transform var(--transition)}
+.service:hover .num span{transform:translateX(4px)}
+h3{font-family:var(--font-display);font-size:22px;letter-spacing:-0.015em;margin:28px 0 12px;font-weight:700}
+.service p,.steps p{color:var(--muted);font-size:15px;line-height:1.7}
+.service a{display:inline-flex;align-items:center;gap:6px;margin-top:22px;font-size:13px;font-weight:700;border-bottom:1px solid var(--green);padding-bottom:4px;transition:gap var(--transition),color var(--transition)}
+.service a:hover{gap:10px;color:var(--green)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:64px;background:linear-gradient(135deg,#e8ecdf,#dde3d2);padding:56px;border-radius:var(--radius-lg);margin-top:64px;box-shadow:var(--shadow-sm);border:1px solid rgba(20,39,34,0.05)}
+.about p{font-size:16px;line-height:1.75;color:#526158}
+.about h2{font-size:36px}
+.check{border-bottom:1px solid rgba(20,39,34,0.1);padding:16px 0;font-size:14px;display:flex;gap:14px;align-items:center;transition:padding-left var(--transition),color var(--transition)}
+.check:hover{padding-left:6px;color:var(--green)}
+.check span{color:var(--green);font-weight:700}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px}
+.steps article{padding:32px 28px;background:#fff;border:1px solid rgba(20,39,34,0.06);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);transition:transform var(--transition),box-shadow var(--transition)}
+.steps article:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.steps strong{font-size:12px;color:var(--muted);letter-spacing:0.16em;font-weight:700}
+.steps h3{margin:18px 0 10px}
+.contact{background:var(--green);color:#fff;padding:90px 0;position:relative;overflow:hidden}
+.contact::before{content:'';position:absolute;inset:0;background:radial-gradient(50% 60% at 10% 90%,rgba(217,242,121,0.1),transparent 60%);pointer-events:none}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;position:relative}
+.contact h2{max-width:460px}
+.contact p{font-size:15px;line-height:1.7;color:#c3d2c8}
+.phone{display:block;font-size:34px;letter-spacing:-0.02em;margin:32px 0 10px;font-family:var(--font-display);font-weight:800;transition:color var(--transition),transform var(--transition)}
+.phone:hover{color:var(--lime);transform:translateX(4px)}
+.contact small{color:#b9cbbf;line-height:1.7;font-size:13px}
+.form{background:rgba(245,245,239,0.96);color:var(--ink);padding:36px;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);border:1px solid rgba(255,255,255,0.4);backdrop-filter:blur(8px)}
+.form h3{margin:0 0 6px;font-family:var(--font-display)}
+.form p{color:var(--muted);font-size:13px;margin:0 0 8px}
+.field{margin-top:20px}
+label{display:block;font-size:12px;font-weight:700;margin-bottom:8px;letter-spacing:0.04em;color:var(--ink)}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid rgba(20,39,34,0.14);border-radius:var(--radius-md);background:#fff;color:var(--ink);font-size:14px;transition:border-color var(--transition),box-shadow var(--transition),background var(--transition)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 4px rgba(25,62,50,0.12)}
+textarea{resize:vertical;min-height:100px;line-height:1.6}
+.form .btn{width:100%;margin-top:22px}
+.result{white-space:pre-wrap;line-height:1.7;font-size:13px;background:#e8ecdf;padding:16px;margin-top:16px;border-radius:var(--radius-md);border:1px solid rgba(20,39,34,0.06)}
+#copy-status{font-size:13px;color:var(--muted);margin-top:10px;min-height:18px}
+footer{padding:32px 5%;display:flex;justify-content:space-between;font-size:12px;color:var(--muted);gap:20px;flex-wrap:wrap;border-top:1px solid rgba(20,39,34,0.06);background:var(--paper)}
+footer a{border-bottom:1px solid transparent;transition:border-color var(--transition),color var(--transition)}
+footer a:hover{color:var(--green);border-color:var(--green)}
+.menu{display:none}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity 700ms ease,transform 700ms ease}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:0;padding:48px 0 24px}.hero-grid h1{letter-spacing:-0.025em}.visual{max-width:560px;width:100%;margin:32px auto 0;padding-top:0}.hero-foot{margin:28px 0 0}.strip{gap:18px;justify-content:space-between;font-size:10px;letter-spacing:0.14em}.intro{display:block;margin-bottom:40px}.section{padding:72px 0}.services,.steps{grid-template-columns:1fr}.about,.contact-grid{grid-template-columns:1fr;gap:32px}.about{padding:32px;margin-top:48px}.steps{gap:20px}.contact{padding:60px 0}.form{padding:26px}footer{flex-direction:column;text-align:center}.brand{font-size:21px}.nav{padding:16px 5%}.nav .btn{padding:12px 16px;font-size:12px}.links{display:none}h1{font-size:clamp(40px,9vw,56px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><nav class="nav" aria-label="Main navigation"><a class="brand" href="#home"><b>ϟ</b><span>JAMERIC<small>Generator repairs & service</small></span></a><div class="links"><a href="#services">Our services</a><a href="#about">About Jameric</a><a href="#process">How it works</a></div><a class="btn dark" href="tel:+27616525013">Call us <span>↗</span></a></nav></header>
+<main><section class="hero" id="home"><div class="wrap hero-grid"><div><div class="eyebrow"><i class="dot"></i> Generator care · Germiston</div><h1>Keep your power.<br><em>Get back to<br>what matters.</em></h1><p class="lead">Generator trouble shouldn’t stop your day. Talk to Jameric about repairs and servicing for your generator.</p><div class="actions"><a class="btn" href="#contact">Discuss a repair <span>↗</span></a><a class="btn outline" href="#services">Explore services <span>↓</span></a></div><div class="hero-foot"><span>✓ Repairs & fault finding</span><span>✓ Generator servicing</span></div></div><div class="visual"><div class="visual-label"><span>POWER. RESTORED.</span><span>01 / GENERATOR CARE</span></div><svg viewBox="0 0 600 430" role="img" aria-label="Stylised illustration of an industrial generator"><defs><linearGradient id="panel" x2="0" y2="1"><stop stop-color="#e8e8d5"/><stop offset="1" stop-color="#b4bdaa"/></linearGradient><linearGradient id="side"><stop stop-color="#809282"/><stop offset="1" stop-color="#4b6356"/></linearGradient></defs><ellipse cx="305" cy="355" rx="230" ry="28" fill="#102c23"/><path d="M75 172L208 101 532 155 404 231Z" fill="#f2f0dd"/><path d="M75 172L404 231V349L75 289Z" fill="url(#panel)"/><path d="M404 231L532 155V282L404 349Z" fill="url(#side)"/><path d="M65 285L405 345 542 274V299L405 372 65 311Z" fill="#10221d"/><path d="M405 345V372" stroke="#637b68"/><path d="M103 190L253 218V306L103 278Z" fill="#233b30"/><path d="M112 203L245 227M112 215L245 239M112 227L245 251M112 239L245 263M112 251L245 275M112 263L245 287" stroke="#6e8170" stroke-width="4"/><path d="M273 222L383 242V326L273 306Z" fill="#c8cfba" stroke="#8c9c88"/><path d="M291 238L345 248V282L291 272Z" fill="#233b30"/><path d="M300 247L330 252V264L300 259Z" fill="#d9f279"/><circle cx="357" cy="278" r="6" fill="#c67942"/><path d="M370 284V304" stroke="#304a3b" stroke-width="4"/><path d="M425 238L513 186V270L425 320Z" fill="#273e31"/><path d="M437 243L500 206M437 257L500 220M437 271L500 234M437 285L500 248M437 299L500 262" stroke="#738a75" stroke-width="4"/><path d="M218 117L278 128 255 142 196 131Z" fill="#b2bcaa"/><path d="M341 146V106L356 99 370 105V151" fill="#344d3d"/><ellipse cx="355" cy="104" rx="14" ry="7" fill="#172c22"/><path d="M141 331V348L167 353V336M462 342V356L486 344V330" fill="#0b2018"/><path d="M80 115L80 88H170M472 360H553V326" stroke="#b5cc8b" fill="none" opacity=".5"/><text x="89" y="79" fill="#c3d2c8" font-size="9" font-family="Arial" letter-spacing="2">GENERATOR SYSTEMS</text></svg><div class="visual-label status"><span>REPAIR / SERVICE / MAINTAIN</span><span>GERMISTON, GAUTENG</span></div></div></div></section>
+<div class="strip"><span>GENERATOR REPAIRS</span><span>FAULT FINDING</span><span>ROUTINE SERVICING</span></div>
+<section class="wrap section" id="services"><div class="intro"><div><div class="eyebrow">01 / What we do</div><h2>A better running generator<br>starts with the right care.</h2></div><p>From a generator that won’t start to a service that’s overdue, tell us what’s happening and we’ll discuss the next step.</p></div><div class="services"><article class="service"><div class="num">01 <span>↗</span></div><h3>Generator repairs</h3><p>Starting problems, unexpected shutdowns or a change in performance? Describe the fault and speak to us about a repair.</p><a href="#contact" data-service="Generator repair">Discuss your generator →</a></article><article class="service"><div class="num">02 <span>↗</span></div><h3>Servicing & maintenance</h3><p>Give your generator regular attention. Contact us to discuss its service needs, usage and maintenance history.</p><a href="#contact" data-service="Generator servicing">Ask about servicing →</a></article><article class="service"><div class="num">03 <span>↗</span></div><h3>Fault finding</h3><p>Not sure what’s wrong? Share the symptoms, any warning codes and your generator details to start the conversation.</p><a href="#contact" data-service="Fault finding">Describe a fault →</a></article></div><div class="about" id="about"><div><div class="eyebrow">Local service. Practical support.</div><h2>Your generator.<br>Our focus.</h2></div><div><p>Jameric Generator Repairs and Service is based in Germiston, Gauteng. We focus on helping customers with generator repairs and servicing.</p><div class="check"><span>↗</span> Speak directly with the business</div><div class="check"><span>↗</span> Discuss your equipment and service needs</div><div class="check"><span>↗</span> Confirm arrangements before your visit</div></div></div></section>
+<section class="wrap section" id="process" style="padding-top:0"><div class="eyebrow">02 / Getting started</div><h2>Let’s get things running.</h2><div class="steps"><article><strong>STEP 01</strong><h3>Tell us the problem</h3><p>Have your generator’s make, model and symptoms ready. Photos and fault codes can help explain the issue.</p></article><article><strong>STEP 02</strong><h3>Discuss the next step</h3><p>Call to confirm service availability, assessment arrangements and where to bring your equipment.</p></article><article><strong>STEP 03</strong><h3>Agree on the work</h3><p>Discuss the proposed repair or service, costs and expected timing directly with Jameric.</p></article></div></section>
+<section class="contact" id="contact"><div class="wrap contact-grid"><div><div class="eyebrow"><i class="dot"></i> 03 / Talk to Jameric</div><h2>Power problems?<br>Let’s talk.</h2><p>Call us to discuss a repair, ask about servicing or confirm your visit.</p><a class="phone" href="tel:+27616525013">061 652 5013 ↗</a><small>Germiston, Gauteng, South Africa<br>Please call to confirm the workshop address and opening hours.</small></div><form class="form" id="enquiry"><h3>Prepare your enquiry</h3><p>Build a short summary to copy and share with Jameric. This form does not send a message.</p><div class="field"><label for="service">What do you need?</label><select id="service"><option>Generator repair</option><option>Generator servicing</option><option>Fault finding</option><option>General enquiry</option></select></div><div class="field"><label for="model">Generator make / model (optional)</label><input id="model" maxlength="150" placeholder="e.g. make, model and kVA rating"></div><div class="field"><label for="issue">Tell us what’s happening</label><textarea id="issue" required maxlength="2000" placeholder="Describe the fault or service you need…"></textarea></div><button class="btn dark" type="submit">Create enquiry summary <span>↗</span></button><div id="output" hidden><div class="result" id="summary" aria-live="polite"></div><button class="btn" id="copy" type="button">Copy enquiry</button><p id="copy-status" role="status"></p></div></form></div></section></main><footer><span>© <span id="year"></span> Jameric Generator Repairs and Service</span><span>Germiston, Gauteng · <a href="tel:+27616525013">061 652 5013</a></span></footer>
+<script>
+
+document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('[data-service]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('service').value=a.dataset.service}));document.getElementById('enquiry').addEventListener('submit',e=>{e.preventDefault();const issue=document.getElementById('issue');if(!issue.value.trim()){issue.setCustomValidity('Please describe your enquiry.');issue.reportValidity();return}issue.setCustomValidity('');document.getElementById('summary').textContent='Hello Jameric, I would like to enquire about '+document.getElementById('service').value.toLowerCase()+'.\n'+(document.getElementById('model').value.trim()?'Generator: '+document.getElementById('model').value.trim()+'\n':'')+'Details: '+issue.value.trim()+'\nPlease let me know the next steps and your availability.';document.getElementById('output').hidden=false;document.getElementById('copy-status').textContent=''});document.getElementById('issue').addEventListener('input',e=>e.target.setCustomValidity(''));document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(document.getElementById('summary').textContent);document.getElementById('copy-status').textContent='Copied. You can now paste this into your preferred messaging app.'}catch{document.getElementById('copy-status').textContent='Select and copy the summary above.'}});</script>
+
+
+<script>
+const hdr=document.querySelector('header');
+window.addEventListener('scroll',()=>{if(hdr)hdr.classList.toggle('scrolled',window.scrollY>12)},{passive:true});
+</script>
+</body>
+</html>
+

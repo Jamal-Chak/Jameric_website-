@@ -1,0 +1,12 @@
+.page-hero { padding: 80px 0 40px; }
+.page-hero h1 { font-family: var(--font-display); font-size: clamp(36px, 4.2vw, 56px); line-height: 1.05; letter-spacing: -0.03em; margin: 16px 0 0; font-weight: 800; }
+.page-hero p { font-size: 17px; line-height: 1.7; color: var(--muted); max-width: 640px; margin-top: 18px; }
+.breadcrumb { font-size: 12px; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 40px; }
+.detail-card { padding: 28px; background: #fff; border: 1px solid rgba(20,39,34,0.06); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+.detail-card h3 { margin: 0 0 12px; }
+.detail-card ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 15px; line-height: 1.8; }
+.detail-card li { margin-bottom: 6px; }
+.notfound { text-align: center; padding: 120px 0; }
+.notfound h1 { font-family: var(--font-display); font-size: clamp(48px, 6vw, 80px); margin: 0; }
+@media (max-width: 900px) { .detail-grid { grid-template-columns: 1fr; } .page-hero { padding: 60px 0 30px; } }
